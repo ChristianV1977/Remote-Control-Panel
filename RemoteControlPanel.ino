@@ -27,11 +27,11 @@ char ssid[] = "<ssid here>";                              //  your network SSID 
 char pass[] = "<password here>";                             // your network password (use for WPA, or use as key for WEP)
 
 ///*** Azure IoT Hub Config ***///
-char hostname[] = "Sennahmkr1000.azure-devices.net";    // host name address for your Azure IoT Hub
-char authSAS[] = "SharedAccessSignature sr=Sennahmkr1000.azure-devices.net%2fdevices%2fpip4048&sig=7%2b9pKUMFMWCtcgom%2bkPra%2bNOfWT5UMakBk8Ps1QEJbs%3d&se=1489304554";
-String azureReceive = "/devices/pip4048/messages/devicebound?api-version=2016-02-03";
-char feeduri[] = "/devices/pip4048/messages/devicebound?api-version=2016-02-03"; //feed URI 
-char azurePOST_Uri[]= "/devices/pip4048/messages/events?api-version=2016-02-03";    // feed POST Uri
+char hostname[] = "<enter here>";    // host name address for your Azure IoT Hub
+char authSAS[] = "<enter here>";
+String azureReceive = "/devices/<enter here>/messages/devicebound?api-version=2016-02-03";
+char feeduri[] = "/devices/<enter here>/messages/devicebound?api-version=2016-02-03"; //feed URI 
+char azurePOST_Uri[]= "/devices/<enter here>/messages/events?api-version=2016-02-03";    // feed POST Uri
 unsigned long lastConnectionTime = 0;            
 
 WiFi101Stream stream;                                   
