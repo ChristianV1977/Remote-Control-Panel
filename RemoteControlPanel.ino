@@ -23,8 +23,8 @@
 //#define SET_MODE		                0x42     
 
 ///*** WiFi Network Config ***///
-char ssid[] = "draadloos";                              //  your network SSID (name)
-char pass[] = "5ster5ster";                             // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "<ssid here>";                              //  your network SSID (name)
+char pass[] = "<password here>";                             // your network password (use for WPA, or use as key for WEP)
 
 ///*** Azure IoT Hub Config ***///
 char hostname[] = "Sennahmkr1000.azure-devices.net";    // host name address for your Azure IoT Hub
