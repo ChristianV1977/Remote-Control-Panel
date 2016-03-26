@@ -707,13 +707,13 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CAP-00810" x="66.548" y="31.8262" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="66.4972" y="27.0002" rot="MR180">
-<attribute name="PROD_ID" value="CAP-07822" x="66.4972" y="27.0002" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PROD_ID" value="CAP-00810" x="66.4972" y="27.0002" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C7" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="66.4718" y="24.511" rot="MR0">
-<attribute name="PROD_ID" value="CAP-07822" x="66.4718" y="24.511" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PROD_ID" value="CAP-00810" x="66.4718" y="24.511" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C8" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="66.548" y="29.718" rot="MR0">
-<attribute name="PROD_ID" value="CAP-07822" x="66.548" y="29.718" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PROD_ID" value="CAP-00810" x="66.548" y="29.718" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="J1" library="con-jack" package="DCJ0202" value="DCJ0202" x="88.9" y="17.526" rot="R90">
 <attribute name="MPN" value="" x="88.9" y="17.526" size="1.778" layer="27" rot="R90" display="off"/>
@@ -737,10 +737,10 @@ design rules under a new name.</description>
 <element name="D1" library="diode" package="SMB" value="" x="86.36" y="27.94" rot="MR0"/>
 <element name="IC2" library="adafruit" package="TO252" value="7805DT" x="93.218" y="36.322" rot="MR90"/>
 <element name="C3" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="91.948" y="27.178" rot="MR90">
-<attribute name="PROD_ID" value="CAP-07822" x="91.948" y="27.178" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="PROD_ID" value="CAP-00810" x="91.948" y="27.178" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="C5" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="85.344" y="37.592" rot="MR90">
-<attribute name="PROD_ID" value="CAP-07822" x="85.344" y="37.592" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="PROD_ID" value="CAP-00810" x="85.344" y="37.592" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 </elements>
 <signals>
