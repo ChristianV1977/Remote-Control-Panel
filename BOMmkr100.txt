@@ -1,0 +1,19 @@
+Part Value     Device                    Package             Description                  
+C1   0.1uF     0.1UF-25V(+80/-20%)(0603) 0603-CAP            CAP-00810                    
+C2   0.1uF     0.1UF-25V(+80/-20%)(0603) 0603-CAP            CAP-00810                    
+C3   0.1uF     0.1UF-25V(+80/-20%)(0603) 0603-CAP            CAP-00810                    
+C4   0.1uF     0.1UF-25V(+80/-20%)(0603) 0603-CAP            CAP-00810                    
+C5   0.1uF     0.1UF-25V(+80/-20%)(0603) 0603-CAP            CAP-00810                    
+C7   0.1uF     0.1UF-25V(+80/-20%)(0603) 0603-CAP            CAP-00810                    
+C8   0.1uF     0.1UF-25V(+80/-20%)(0603) 0603-CAP            CAP-00810                    
+D1             DIODE-SMB                 SMB                 DIODE                        
+IC2  7805DT    7805DT                    TO252               Positive VOLTAGE REGULATOR   
+J1   DCJ0202   DCJ0202                   DCJ0202             DC POWER JACK                
+LED1 blue      LEDSML0805                SML0805             LED                          
+LED2 green     LEDSML0805                SML0805             LED                          
+R1   120       RESISTOR0805-RES          0805                Resistor                     
+R2   120       RESISTOR0805-RES          0805                Resistor                     
+U$1  MKR1000   MKR1000                   MKR1000                                          
+U1   ST3232BDR ST3232BDR                 SOIC127P600X175-16N RS-232 drivers and receivers 
+X1             DB9FEMALE                 DB9                 DB9 Connector                
+
