@@ -1,0 +1,109 @@
+﻿<Page
+    x:Class="RemotePanelApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RemotePanelApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ScrollViewer >
+        <StackPanel Orientation ="Vertical" ScrollViewer.VerticalScrollMode="Enabled">
+            <StackPanel Orientation="Horizontal" >
+                <StackPanel Grid.Column="0" Width="auto" Height="auto" Name="left"   HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="lico" Width ="100" Height="60" Source="Assets/battery-charging.png" VerticalAlignment="Top" />
+                    <TextBlock  Name="lna" FontSize="14" Text="Battery Voltage" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock Name="lva" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" Width="auto" Height="auto" Name="Right"   HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="rico" Width ="100" Height="60" Source="Assets/Sign.png" VerticalAlignment="Top" />
+                    <TextBlock  x:Name="rna" FontSize="14" Text="Battery Percent" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock x:Name="rva" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+                <StackPanel  Grid.Row="1" Grid.Column="0" Width="auto" Height="auto" Name="left2"  HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="lico2" Width ="100" Height="60" Source="Assets/bulb.png" VerticalAlignment="Top" />
+                    <TextBlock  Name="lna2" FontSize="14" Text="Load Watt" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock Name="lva2" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <StackPanel Grid.Row="1" Grid.Column="1" Width="auto" Height="auto" Name="Right2"  HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="rico2" Width ="100" Height="60" Source="Assets/plugedin2.png" VerticalAlignment="Top" />
+                    <TextBlock  x:Name="rna2" FontSize="14" Text="Load Percent" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock x:Name="rva2" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+                <StackPanel  Grid.Row="2" Grid.Column="0" Width="auto" Height="auto" Name="left3"   HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="lico3" Width ="100" Height="60" Source="Assets/solarcharge.png" VerticalAlignment="Top" />
+                    <TextBlock  Name="lna3" FontSize="14" Text="PV volts" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock Name="lva3" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="1" Width="auto" Height="auto" Name="Right3"  HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="rico3" Width ="100" Height="60" Source="Assets/amp.png" VerticalAlignment="Top" />
+                    <TextBlock  x:Name="rna3" FontSize="14" Text="Charge Amps" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock x:Name="rva3" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel  Grid.Row="3" Grid.Column="0" Width="auto" Height="auto" Name="left4"   HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="lico4" Width ="100" Height="60" Source="Assets/grid2.png" VerticalAlignment="Top" />
+                    <TextBlock  Name="lna4" FontSize="14" Text="Input volts" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock Name="lva4" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="1" Width="auto" Height="auto" Name="Right4"  HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="rico4" Width ="100" Height="60" Source="Assets/freq.png" VerticalAlignment="Top" />
+                    <TextBlock  x:Name="rna4" FontSize="14" Text="Input freq" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock x:Name="rva4" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+                <StackPanel  Grid.Row="4" Grid.Column="0" Width="auto" Height="auto" Name="left5"   HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="lico5" Width ="100" Height="60" Source="Assets/plugedin2.png" VerticalAlignment="Top" />
+                    <TextBlock  Name="lna5" FontSize="14" Text="Output VA" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock Name="lva5" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Grid.Row="4" Grid.Column="1" Width="auto" Height="auto" Name="Right5"  HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="rico5" Width ="100" Height="60" Source="Assets/batamp.png" VerticalAlignment="Top" />
+                    <TextBlock  x:Name="rna5" FontSize="14" Text="Discharge Amp" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock x:Name="rva5" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+                <StackPanel  Grid.Row="5" Grid.Column="0" Width="auto" Height="auto" Name="left6"   HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="lico6" Width ="100" Height="60" Source="Assets/bolt.png" VerticalAlignment="Top" />
+                    <TextBlock  Name="lna6" FontSize="14" Text="Output volts" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock Name="lva6" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Grid.Row="5" Grid.Column="1" Width="auto" Height="auto" Name="Right6"  HorizontalAlignment="Center" BorderThickness="1,1,1,1" Background="#FF9BC7DC" >
+                    <Image Name="rico6" Width ="100" Height="60" Source="Assets/freq.png" VerticalAlignment="Top" />
+                    <TextBlock  x:Name="rna6" FontSize="14" Text="Output freq" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock x:Name="rva6" FontSize="32" Text=" " HorizontalAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid>
+                    <TextBlock  x:Name="txtStatus" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-140,-46"/>
+                </Grid>
+            </CommandBar.Content>
+            <AppBarButton x:Name="sbu" Icon="AlignCenter" Label="SBU" Width="30" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="sbu_click"/>
+            <AppBarButton x:Name="solar" Icon="ViewAll" Label="solar" Width="30" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="solar_click"/>
+            <AppBarButton x:Name="utility" Label="utility" Width="30" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="utility_click" Icon="Globe"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Page.TopAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="appBarButton" HorizontalAlignment="Stretch" Icon="Cancel" Label="Exit" VerticalAlignment="Stretch" d:LayoutOverrides="Height" Click="btnExit_Click"/>
+            <AppBarToggleButton x:Name="btnEcho" HorizontalAlignment="Stretch" Icon="Refresh" Label="Refresh" VerticalAlignment="Stretch" d:LayoutOverrides="Height" Click="btnEcho_Click"/>
+            <AppBarToggleButton x:Name="btnConnect" HorizontalAlignment="Stretch" Icon="Add" Label="Connect" VerticalAlignment="Stretch" d:LayoutOverrides="Height" Click="btnConnect_Click"/>
+            <AppBarToggleButton x:Name="OffButton" HorizontalAlignment="Stretch" Label="Led off" VerticalAlignment="Stretch" d:LayoutOverrides="Height" Click="OffButton_Click" Icon="SolidStar"/>
+            <AppBarToggleButton x:Name="OnButton" HorizontalAlignment="Stretch" Label="Led on" VerticalAlignment="Stretch" d:LayoutOverrides="Height" Click="OnButton_Click" Icon="OutlineStar"/>
+        </CommandBar>
+
+
+    </Page.TopAppBar>
+</Page>
