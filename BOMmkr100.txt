@@ -15,5 +15,6 @@ R1   120       RESISTOR0805-RES          0805                Resistor
 R2   120       RESISTOR0805-RES          0805                Resistor                     
 U$1  MKR1000   MKR1000                   MKR1000                                          
 U1   ST3232BDR ST3232BDR                 SOIC127P600X175-16N RS-232 drivers and receivers 
-X1             DB9FEMALE                 DB9                 DB9 Connector                
+X1             DB9FEMALE                 DB9                 DB9 Connector      
+T1   6V DC     Adaptor       
 
