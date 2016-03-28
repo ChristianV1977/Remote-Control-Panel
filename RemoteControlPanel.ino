@@ -20,18 +20,18 @@
 
 #define TEST_MODE                   0x40
 #define RELOAD_NOW                  0x41      
-//#define SET_MODE		                0x42     
+#define SET_MOD 		                0x42     
 
 ///*** WiFi Network Config ***///
-char ssid[] = "<ssid here>";                              //  your network SSID (name)
-char pass[] = "<password here>";                             // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "<your wifi ssid>";                              //  your network SSID (name)
+char pass[] = "<your password>";                             // your network password (use for WPA, or use as key for WEP)
 
 ///*** Azure IoT Hub Config ***///
-char hostname[] = "<enter here>";    // host name address for your Azure IoT Hub
-char authSAS[] = "<enter here>";
-String azureReceive = "/devices/<enter here>/messages/devicebound?api-version=2016-02-03";
-char feeduri[] = "/devices/<enter here>/messages/devicebound?api-version=2016-02-03"; //feed URI 
-char azurePOST_Uri[]= "/devices/<enter here>/messages/events?api-version=2016-02-03";    // feed POST Uri
+char hostname[] = "<your host here>.azure-devices.net";    // host name address for your Azure IoT Hub
+char authSAS[] = "SharedAccessSignature sr=<your host here>.azure-devices.net%2fdevices%2f<your device>&sig=your key here>";
+String azureReceive = "/devices/<your device>/messages/devicebound?api-version=2016-02-03";
+char feeduri[] = "/devices/<your device>/messages/devicebound?api-version=2016-02-03"; //feed URI 
+char azurePOST_Uri[]= "/devices/<your device>/messages/events?api-version=2016-02-03";    // feed POST Uri
 unsigned long lastConnectionTime = 0;            
 
 WiFi101Stream stream;                                   
@@ -500,10 +500,29 @@ void sysexCallback(byte command, byte argc, byte *argv)
                 }
         
                 digitalWrite( MKR_LED, val );
-				Firmata.write(END_SYSEX);
+			        	Firmata.write(END_SYSEX);
             }
 
 		 break;
+      case SET_MOD:
+    Serial.println("SET_MOD");
+    if (argc == 1) //verify we received the whole message
+    {
+      byte val;
+      switch (argv[0]) {
+      case 0:
+        Serial1.print(POP00);
+        break;
+      case 1:
+        Serial1.print(POP00);
+        break;
+      case 2:
+        Serial1.print(POP00);
+        break;
+      }
+    }
+    break;
+        Firmata.write(END_SYSEX);
     case RELOAD_NOW:
              Serial.println("RELOAD_NOW");
              read_QMOD();
@@ -515,27 +534,7 @@ void sysexCallback(byte command, byte argc, byte *argv)
              Firmata.sendString(x.c_str()); 
              Firmata.write(END_SYSEX);
       break;
-//	case SET_MODE:
-//		Serial.println("SET_MODE");
-//		if (argc == 1) //verify we received the whole message
-//		{
-//			
-//			byte val;
-//			switch (argv[0]) {
-//			case 0:
-//				Serial1.print(POP00);
-//				break;
-//			case 1:
-//				Serial1.print(POP00);
-//				break;
-//			case 2:
-//				Serial1.print(POP00);
-//				break;
-//			}
-//		}
-//
-//		Firmata.write(END_SYSEX);
-//		break;
+
   }
 }
 
